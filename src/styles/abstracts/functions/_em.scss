@@ -2,7 +2,7 @@
 @use "@styles/abstracts/settings" as settings;
 
 @function em($px) {
-    @if unitless($px) {
+    @if math.is-unitless($px) {
         $px: $px * 1px;
     }
 
