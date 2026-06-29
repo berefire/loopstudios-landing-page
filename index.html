@@ -1,59 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" translate="no">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
+  <title>Berefire | Frontend Mentor Loopstudios landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <meta name="description"
+    content="Responsive solution to the Frontend Mentor Loopstudios Landing Page challenge, built with semantic HTML, Sass, JavaScript, Vite, and accessibility best practices.">
+
+  <meta name="author" content="Berefire">
+  <meta name="theme-color" content="#000000">
+  <meta name="robots" content="index, follow">
+  <meta name="color-scheme" content="light">
+
+
+  <meta property="og:title" content="Berefire | Frontend Mentor Loopstudios Landing Page">
+  <meta property="og:description"
+    content="Responsive solution to the Frontend Mentor Loopstudios Landing Page challenge, built with semantic HTML, Sass, JavaScript, Vite, and accessibility best practices.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Berefire | Frontend Mentor Loopstudios Landing Page">
+  <meta property="og:description"
+    content="Responsive solution to the Frontend Mentor Loopstudios Landing Page challenge, built with semantic HTML, Sass, JavaScript, Vite, and accessibility best practices.">
+  <meta property="og:image" content="assets/images/preview.jpg">
+  <meta property="og:site_name" content="Berefire">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Berefire | Frontend Mentor Loopstudios Landing Page">
+  <meta name="twitter:description"
+    content="Responsive solution to the Frontend Mentor Loopstudios Landing Page challenge, built with semantic HTML, Sass, JavaScript, Vite, and accessibility best practices.">
+  <meta name="twitter:image" content="https://.../preview.jpg">
+
   <script src="./src/js/main.js" defer type="module"></script>
 </head>
+
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
+  <main>
+    <section class="hero">
+      <header class="hero__header">
+        <a href="#" class="site-logo">
+          <img src="/icons/logo.svg" alt="Loopstudios logo" class="site-logo__image" width="192" height="32">
+        </a>
+        <nav aria-label="Desktop navigation" class="site-nav">
+          <ul class="site-nav__list" role="list">
+            <li class="site-nav__item"><a href="#" class="site-nav__link">About</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Careers</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Events</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Products</a></li>
+            <li class="site-nav__item"><a href="#" class="site-nav__link">Support</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="mobile-menu"
+          aria-label="Open mobile menu">
+          <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg">
+            <g fill="currentColor" fill-rule="evenodd" viewBox="0 0 24 16">
+              <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+            </g>
+          </svg>
+        </button>
+      </header>
+      <h1>Immersive experiences that deliver</h1>
+    </section>
 
-  Immersive experiences that deliver
+    <section class="about">
+      <div class="about__content">
+        <picture class="about__picture">
+          <source srcset="/images/desktop/image-interactive.jpg" media="(min-width: 1024px)">
+          <img src="/images/mobile/image-interactive.jpg" alt="A person interacting with a virtual reality headset"
+            class="about__image" width="654" height="448">
+        </picture>
+        <div class="about__text">
+          <h2 class="about__title">The leader in interactive VR</h2>
+          <p class="about__description">Founded in 2011, Loopstudios has been producing world-class virtual reality
+            projects for some of the best companies around the globe. Our award-winning creations have transformed
+            businesses through digital experiences that bind to their brand.</p>
+        </div>
+      </div>
+    </section>
 
-  The leader in interactive VR
+    <section class="creations">
+      <h2 class="creations__title">Our creations</h2>
+      <div>
+        <ul class="creations__list">
+          <li class="creations__item"><a href="#" class="creations__link">
+              <picture class="creations__picture">
+                <source srcset="/images/desktop/image-deep-earth.jpg" media="(min-width: 1024px)">
+                <img src="/images/mobile/image-deep-earth.jpg" alt="Deep earth" class="creations__image" width="654"
+                  height="240">
+              </picture>
+              <h3 class="creations__name">Deep earth</h3>
+            </a>
+          </li>
+          <li class="creations__item"><a href="#" class="creations__link">
+              <picture class="creations__picture">
+                <source srcset="/images/desktop/image-night-arcade.jpg" media="(min-width: 1024px)">
+                <img src="/images/mobile/image-night-arcade.jpg" alt="Night arcade" class="creations__image" width="654"
+                  height="240">
+              </picture>
+              <h3 class="creations__name">Night arcade</h3>
+            </a>
+          </li>
+          <li class="creations__item"><a href="#" class="creations__link">
+              <picture class="creations__picture">
+                <source srcset="/images/desktop/image-soccer-team.jpg" media="(min-width: 1024px)">
+                <img src="/images/mobile/image-soccer-team.jpg" alt="Soccer team VR" class="creations__image"
+                  width="654" height="240">
+              </picture>
+              <h3 class="creations__name">Soccer team VR</h3>
+            </a>
+          </li>
+          <li class="creations__item"><a href="#" class="creations__link">
+              <picture class="creations__picture">
+                <source srcset="/images/desktop/image-grid.jpg" media="(min-width: 1024px)">
+                <img src="/images/mobile/image-grid.jpg" alt="The grid" class="creations__image" width="654"
+                  height="240">
+              </picture>
+              <h3 class="creations__name">The grid</h3>
+            </a>
+          </li>
+          <li class="creations__item"><a href="#" class="creations__link">
+              <picture class="creations__picture">
+                <source srcset="/images/desktop/image-from-above.jpg" media="(min-width: 1024px)">
+                <img src="/images/mobile/image-from-above.jpg" alt="From up above VR" class="creations__image"
+                  width="654" height="240">
+              </picture>
+              <h3 class="creations__name">From up above VR</h3>
+            </a>
+          </li>
+          <li class="creations__item"><a href="#" class="creations__link">
+              <picture class="creations__picture">
+                <source srcset="/images/desktop/image-pocket-borealis.jpg" media="(min-width: 1024px)">
+                <img src="/images/mobile/image-pocket-borealis.jpg" alt="Pocket borealis" class="creations__image"
+                  width="654" height="240">
+              </picture>
+              <h3 class="creations__name">Pocket borealis</h3>
+            </a>
+          </li>
+          <li class="creations__item"><a href="#" class="creations__link">
+              <picture class="creations__picture">
+                <source srcset="/images/desktop/image-curiosity.jpg" media="(min-width: 1024px)">
+                <img src="/images/mobile/image-curiosity.jpg" alt="The curiosity" class="creations__image" width="654"
+                  height="240">
+              </picture>
+              <h3 class="creations__name">The curiosity</h3>
+            </a>
+          </li>
+          <li class="creations__item"><a href="#" class="creations__link">
+              <picture class="creations__picture">
+                <source srcset="/images/desktop/image-fisheye.jpg" media="(min-width: 1024px)">
+                <img src="/images/mobile/image-fisheye.jpg" alt="Make it fisheye" class="creations__image" width="654"
+                  height="240">
+              </picture>
+              <h3 class="creations__name">Make it fisheye</h3>
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="creations__button">See all</button>
+      </div>
+    </section>
+  </main>
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+  <footer class="site-footer">
+    <div class="wrapper">
+      <a href="/" class="site-footer__logo">
+        <img src="/icons/logo.svg" alt="Loopstudios logo" class="site-footer__logo-image" width="192" height="32">
+      </a>
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        <ul class="site-footer__list" role="list">
+          <li class="site-footer__item"><a href="#" class="site-footer__link">About</a></li>
+          <li class="site-footer__item"><a href="#" class="site-footer__link">Careers</a></li>
+          <li class="site-footer__item"><a href="#" class="site-footer__link">Events</a></li>
+          <li class="site-footer__item"><a href="#" class="site-footer__link">Products</a></li>
+          <li class="site-footer__item"><a href="#" class="site-footer__link">Support</a></li>
+        </ul>
+      </nav>
 
-  Our creations
+      <ul class="site-footer__social-list" role="list">
+        <li class="site-footer__social-item">
+          <a class="site-footer__social-link" href="#" aria-label="Facebook">
+            <img src="/icons/icon-facebook.svg" alt="" width="24" height="24">
+          </a>
+        </li>
 
-  See all
+        <li class="site-footer__social-item">
+          <a class="site-footer__social-link" href="#" aria-label="Twitter">
+            <img src="/icons/icon-twitter.svg" alt="" width="24" height="24">
+          </a>
+        </li>
 
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
+        <li class="site-footer__social-item">
+          <a class="site-footer__social-link" href="#" aria-label="Pinterest">
+            <img src="/icons/icon-pinterest.svg" alt="" width="24" height="24">
+          </a>
+        </li>
 
-  About
-  Careers
-  Events
-  Products
-  Support
+        <li class="site-footer__social-item">
+          <a class="site-footer__social-link" href="#" aria-label="Instagram">
+            <img src="/icons/icon-instagram.svg" alt="" width="24" height="24">
+          </a>
+        </li>
+      </ul>
 
-  © 2021 Loopstudios. All rights reserved.
+      <p class="site-footer__copyright">
+        &copy; 2021 Loopstudios. All rights reserved.
+      </p>
 
-  <footer class="attribution">
-    Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-      rel="noopener noreferrer" aria-label="Frontend Mentor (opens in a new tab)">Frontend Mentor <span
-        aria-hidden="true" class="external-icon">🔗</span></a>.
-    Coded by <a class="link" target="_blank" rel="noopener noreferrer" aria-label="Author (opens in a new tab)"
-      href="#">Berefire</a>.
+    </div>
+
+    <div class="attribution">
+      Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        rel="noopener noreferrer" aria-label="Frontend Mentor (opens in a new tab)">Frontend Mentor <span
+          aria-hidden="true" class="external-icon">🔗</span></a>.
+      Coded by <a class="link" target="_blank" rel="noopener noreferrer" aria-label="Author (opens in a new tab)"
+        href="#">Berefire</a>.
+    </div>
   </footer>
+
+  <dialog class="site-dialog" id="mobile-menu" aria-labelledby="mobile-menu-title">
+    <header class="site-dialog__header">
+      <a href="#" class="site-logo" aria-label="Loopstudios logo">
+        <img src="/icons/logo.svg" alt="Loopstudios logo" class="site-logo__image" width="192" height="32">
+      </a>
+      <button type="button" class="menu-button menu-button--close" aria-expanded="true" aria-controls="mobile-menu"
+        aria-label="Close mobile menu">
+        <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20">
+          <path
+            d="M17.778.808l1.414 1.414L11.414 10l7.778 7.778-1.414 1.414L10 11.414l-7.778 7.778-1.414-1.414L8.586 10 .808 2.222 2.222.808 10 8.586 17.778.808z"
+            fill="currentColor" fill-rule="evenodd" />
+        </svg>
+      </button>
+    </header>
+    <nav aria-label="Mobile navigation" class="site-nav">
+      <h2 id="mobile-menu-title" class="sr-only">Mobile menu</h2>
+      <ul class="site-nav__list" role="list">
+        <li class="site-nav__item"><a href="#" class="site-nav__link">About</a></li>
+        <li class="site-nav__item"><a href="#" class="site-nav__link">Careers</a></li>
+        <li class="site-nav__item"><a href="#" class="site-nav__link">Events</a></li>
+        <li class="site-nav__item"><a href="#" class="site-nav__link">Products</a></li>
+        <li class="site-nav__item"><a href="#" class="site-nav__link">Support</a></li>
+      </ul>
+    </nav>
+  </dialog>
 </body>
+
 </html>
