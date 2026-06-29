@@ -1,3 +1,5 @@
+@use "@styles/abstracts/functions" as *;
+
 @mixin focus-ring(
     $color: currentColor,
     $width: rem(2),
