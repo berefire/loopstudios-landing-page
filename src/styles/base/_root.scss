@@ -1,0 +1,7 @@
+@use "@styles/abstracts/mixins" as mixins;
+
+@use "@styles/tokens/semantics/typography" as typography;
+
+:root {
+    @include mixins.css-vars(typography.$typography);
+}

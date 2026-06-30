@@ -1,8 +1,8 @@
 @use "@styles/abstracts/functions" as *;
 
 // Font families
-$font-family-alata-sans: 'Alata', sans-serif;
-$font-family-josefin-sans: 'Josefin Sans', sans-serif;
+$font-family-body: 'Alata', sans-serif;
+$font-family-heading: 'Josefin Sans', sans-serif;
 
 // Font weights
 $font-weight-light: 300;
@@ -18,8 +18,10 @@ $font-size-600: rem(48); // Display Small
 $font-size-900: rem(72); // Display Large
 
 // Line heights
-$line-height-tight: 1;
+$line-height-tight: 0.95;
+$line-height-none: 1;
 $line-height-relaxed: 1.65;
 
 // Letter spacing
+$letter-spacing-none: 0;
 $letter-spacing-wide: em(5);
