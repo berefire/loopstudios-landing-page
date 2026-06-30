@@ -1,0 +1,60 @@
+@use "@styles/abstracts/mixins" as mixins;
+@use "@styles/tokens/semantics" as semantics;
+@use "@styles/abstracts/functions" as functions;
+
+.about {
+  --stack-space: var(--space-600);
+  
+  &__content {
+    position: relative;
+  }
+
+  &__image {
+    inline-size: 100%;
+    block-size: auto;
+    object-fit: contain;
+  }
+
+  &__text {
+    --stack-space: var(--space-200);
+    text-align: center;
+
+    @include mixins.mq(md) {
+      --stack-space: var(--space-300);
+    }
+  }
+
+  &__title {
+    color: var(--color-fc-about-title);
+    text-transform: uppercase;
+
+    @include mixins.text-style(semantics.$text-section-heading);
+  }
+
+  &__description {
+    color: var(--color-fc-about-description);
+
+    @include mixins.text-style(semantics.$text-body);
+  }
+
+  @include mixins.mq(lg) {
+    &__image {
+        max-inline-size: functions.rem(731);
+    }
+
+    &__text {
+        position: absolute;
+        max-inline-size: functions.rem(541);
+
+        inset-block-end: 0;
+        inset-inline-end: 0;
+
+        background-color: var(--color-bg-about);
+
+        padding-inline-start: functions.rem(96);
+        padding-block-start: functions.rem(96);
+
+
+    }
+  }
+}

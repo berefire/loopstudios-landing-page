@@ -16,11 +16,13 @@
 
     // Responsive typography CSS variables
     --text-hero-size: #{primitives.$font-size-500};
+    --text-section-heading-size: #{primitives.$font-size-400};
 
     // Responsive space CSS variables
 
     @include mixins.mq(md) {
         --text-hero-size: #{primitives.$font-size-900};
+        --text-section-heading-size: #{primitives.$font-size-600};
     }
 
 }
