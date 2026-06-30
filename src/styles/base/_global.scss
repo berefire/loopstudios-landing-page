@@ -1,3 +1,6 @@
+  @use "@styles/abstracts/functions" as functions;
+  @use "@styles/abstracts/mixins" as mixins;
+
   html {
     min-block-size: 100%;
     -webkit-text-size-adjust: 100%;
@@ -46,6 +49,28 @@
     padding: 0;
     border: 0;
     background: transparent;
+  }
+
+  main {
+    --stack-space: #{functions.rem(96)};
+
+    padding-inline: var(--space-300);
+    padding-block-start: functions.rem(96);
+    padding-block-end: functions.rem(98);
+    background-color: var(--color-bg-main);
+
+    @include mixins.mq(md) {
+        padding-inline: var(--space-1000);
+        padding-block-end: functions.rem(87);
+    }
+
+    @include mixins.mq(lg) {
+      --stack-space: #{functions.rem(184)};
+
+        padding-inline: functions.rem(165);
+        padding-block-start: functions.rem(160);
+        padding-block-end: functions.rem(182);
+    }
   }
 
 @supports (block-size: 100dvh) {
