@@ -1,0 +1,8 @@
+@use "@styles/tokens/primitives" as primitives;
+
+$spacing: (
+    "box-padding-inline": primitives.$space-300,
+    "box-padding-block": primitives.$space-500,
+    "stack-space": primitives.$space-200,
+);
+

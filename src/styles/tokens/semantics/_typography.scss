@@ -1,51 +1,51 @@
 @use "@styles/tokens/primitives" as primitives;
 
 $typography: (
-    font-body: primitives.$font-family-body,
-    font-heading: primitives.$font-family-heading,
+    "font-body": primitives.$font-family-body,
+    "font-heading": primitives.$font-family-heading,
 
-    font-weight-light: primitives.$font-weight-light,
-    font-weight-regular: primitives.$font-weight-regular,
+    "font-weight-light": primitives.$font-weight-light,
+    "font-weight-regular": primitives.$font-weight-regular,
 );
 
 // Text styles
 
 $text-hero: (
-    family: var(--font-heading),
-    size: primitives.$font-size-500,
-    line-height: primitives.$line-height-none,
-    letter-spacing: primitives.$letter-spacing-none,
-    weight: var(--font-weight-light),
+    "family": var(--font-heading),
+    "size": var(--text-hero-size),
+    "line-height": primitives.$line-height-none,
+    "letter-spacing": primitives.$letter-spacing-none,
+    "weight": var(--font-weight-light),
 );
 
 $text-section-heading: (
-    family: var(--font-heading),
-    size: primitives.$font-size-400,
-    line-height: primitives.$line-height-none,
-    letter-spacing: primitives.$letter-spacing-none,
-    weight: var(--font-weight-light),
+    "family": var(--font-heading),
+    "size": primitives.$font-size-400,
+    "line-height": primitives.$line-height-none,
+    "letter-spacing": primitives.$letter-spacing-none,
+    "weight": var(--font-weight-light),
 );
 
 $text-card-heading: (
-    family: var(--font-heading),
-    size: primitives.$font-size-300,
-    line-height: primitives.$line-height-none,
-    letter-spacing: primitives.$letter-spacing-none,
-    weight: var(--font-weight-light),
+    "family": var(--font-heading),
+    "size": primitives.$font-size-300,
+    "line-height": primitives.$line-height-none,
+    "letter-spacing": primitives.$letter-spacing-none,
+    "weight": var(--font-weight-light),
 );
 
 $text-body: (
-    family: var(--font-body),
-    size: primitives.$font-size-200,
-    line-height: primitives.$line-height-relaxed,
-    letter-spacing: primitives.$letter-spacing-none,
-    weight: var(--font-weight-regular),
+    "family": var(--font-body),
+    "size": primitives.$font-size-200,
+    "line-height": primitives.$line-height-relaxed,
+    "letter-spacing": primitives.$letter-spacing-none,
+    "weight": var(--font-weight-regular),
 ); 
 
 $text-button: (
-    family: var(--font-body),
-    size: primitives.$font-size-200,
-    line-height: primitives.$line-height-none,
-    letter-spacing: primitives.$letter-spacing-wide,
-    weight: var(--font-weight-regular),
+    "family": var(--font-body),
+    "size": primitives.$font-size-200,
+    "line-height": primitives.$line-height-none,
+    "letter-spacing": primitives.$letter-spacing-wide,
+    "weight": var(--font-weight-regular),
 );

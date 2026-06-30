@@ -1,0 +1,9 @@
+@use "@styles/tokens/primitives" as primitives;
+
+$colors: (
+    "color-menu-button": primitives.$white,
+    "color-link-site-logo": primitives.$white,
+    "color-border-hero-title": primitives.$white,
+    "color-hero-title": primitives.$white,
+    "color-nav-list": primitives.$white,
+);

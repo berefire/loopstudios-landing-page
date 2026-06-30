@@ -1,0 +1,74 @@
+@use "@styles/abstracts/functions" as functions;
+@use "@styles/abstracts/mixins" as mixins;
+@use "@styles/tokens/semantics" as semantics;
+
+.hero {
+  --stack-space: #{functions.rem(163)};
+
+  min-block-size: functions.rem(650);
+
+  background-image: url("/images/mobile/image-hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    --box-padding-inline: var(--space-300);
+    --box-padding-block: #{functions.rem(18)};
+    --box-border: #{functions.rem(2)} solid var(--color-border-hero-title);
+
+    @include mixins.text-style(semantics.$text-hero);
+
+    color: var(--color-hero-title);
+    text-transform: uppercase;
+    
+  }
+
+  @include mixins.mq(md) {
+    --stack-space: #{functions.rem(130)};
+    --box-padding-inline: var(--space-1000);
+    --box-padding-block: var(--space-800);
+
+    &__title {
+      --box-padding-inline: var(--space-500);
+      --box-padding-block: var(--space-500);
+    }
+  }
+
+  @include mixins.mq(lg) {
+    --box-padding-inline: #{functions.rem(165)};
+    --box-padding-block: var(--space-800);
+    
+
+    &__title {
+        --box-padding-block-start: #{functions.rem(42)};
+        --box-padding-block-end: #{functions.rem(42)};
+
+        max-inline-size: 14ch;
+    }
+
+    background-image: url("/images/desktop/image-hero.jpg");
+  }
+}
+
+.site-logo {
+  color: var(--color-link-site-logo);
+
+  @include mixins.focus-ring;
+}
+
+.menu-button {
+  color: var(--color-menu-button);
+
+  @include mixins.focus-ring;
+
+  @include mixins.mq(lg) {
+    display: none;
+  }
+}

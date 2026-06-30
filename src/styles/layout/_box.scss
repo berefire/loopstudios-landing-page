@@ -1,0 +1,6 @@
+.box {
+    padding-inline: var(--box-padding-inline);
+    padding-block: var(--box-padding-block);
+
+    border: var(--box-border, none);
+}

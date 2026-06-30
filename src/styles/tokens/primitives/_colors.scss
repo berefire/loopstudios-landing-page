@@ -9,3 +9,12 @@ $gradient-dark: linear-gradient(
     hsl(0 0% 0% / 60%) 0%,
     hsl(0 0% 0% / 0%) 60%
 );
+
+$colors: (
+    "white": $white,
+    "black": $black,
+    "gray-200": $gray-200,
+    "blue-100": $blue-100,
+    "blue-50": $blue-50,
+    "gradient-dark": $gradient-dark,
+);

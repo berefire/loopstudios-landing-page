@@ -1,7 +1,24 @@
 @use "@styles/abstracts/mixins" as mixins;
 
-@use "@styles/tokens/semantics/typography" as typography;
+@use "@styles/tokens/semantics" as semantics;
+@use "@styles/tokens/primitives" as primitives;
 
 :root {
-    @include mixins.css-vars(typography.$typography);
+
+    // Primitive CSS variables
+    @include mixins.css-vars(primitives.$spaces);
+    @include mixins.css-vars(primitives.$colors);
+
+    // Semantic CSS variables
+    @include mixins.css-vars(semantics.$spacing);
+    @include mixins.css-vars(semantics.$colors);
+    @include mixins.css-vars(semantics.$typography);
+
+    // Responsive typography CSS variables
+    --text-hero-size: #{primitives.$font-size-500};
+
+    @include mixins.mq(md) {
+        --text-hero-size: #{primitives.$font-size-900};
+    }
+
 }

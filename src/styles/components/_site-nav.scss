@@ -1,0 +1,20 @@
+@use "@styles/abstracts/functions" as functions;
+@use "@styles/abstracts/mixins" as mixins;
+@use "@styles/tokens/semantics" as semantics;
+
+.site-nav {
+    display: none;
+
+    @include mixins.mq(lg) {
+        display: flex;
+
+        &__list {
+            display: flex;
+            padding-block: functions.rem(10); 
+            gap: var(--space-400);
+            color: var(--color-nav-list);
+
+            @include mixins.text-style(semantics.$text-body);
+        }
+    }
+}
