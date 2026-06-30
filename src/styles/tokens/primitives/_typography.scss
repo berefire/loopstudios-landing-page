@@ -1,0 +1,25 @@
+@use "@styles/abstracts/functions" as *;
+
+// Font families
+$font-family-alata-sans: 'Alata', sans-serif;
+$font-family-josefin-sans: 'Josefin Sans', sans-serif;
+
+// Font weights
+$font-weight-light: 300;
+$font-weight-regular: 400;
+
+// Font sizes
+$font-size-100: rem(14); // Small
+$font-size-200: rem(15); // Body
+$font-size-300: rem(24); // Heading Small
+$font-size-400: rem(32); // Heading Medium
+$font-size-500: rem(40); // Heading Large
+$font-size-600: rem(48); // Display Small
+$font-size-900: rem(72); // Display Large
+
+// Line heights
+$line-height-tight: 1;
+$line-height-relaxed: 1.65;
+
+// Letter spacing
+$letter-spacing-wide: em(5);
