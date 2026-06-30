@@ -3,14 +3,16 @@
 @use "@styles/tokens/semantics" as semantics;
 
 .hero {
-  --stack-space: #{functions.rem(163)};
-
   min-block-size: functions.rem(650);
 
   background-image: url("/images/mobile/image-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  &__content {
+    --stack-space: #{functions.rem(163)};
+  }
 
   &__header {
     display: flex;
@@ -27,13 +29,14 @@
 
     color: var(--color-hero-title);
     text-transform: uppercase;
-    
   }
 
   @include mixins.mq(md) {
-    --stack-space: #{functions.rem(130)};
-    --box-padding-inline: var(--space-1000);
-    --box-padding-block: var(--space-800);
+    &__content {
+      --stack-space: #{functions.rem(130)};
+      --box-padding-inline: var(--space-1000);
+      --box-padding-block: var(--space-800);
+    }
 
     &__title {
       --box-padding-inline: var(--space-500);
@@ -42,18 +45,19 @@
   }
 
   @include mixins.mq(lg) {
-    --box-padding-inline: #{functions.rem(165)};
-    --box-padding-block: var(--space-800);
-    
+    background-image: url("/images/desktop/image-hero.jpg");
 
-    &__title {
-        --box-padding-block-start: #{functions.rem(42)};
-        --box-padding-block-end: #{functions.rem(42)};
-
-        max-inline-size: 14ch;
+    &__content {
+      --box-padding-inline: #{functions.rem(165)};
+      --box-padding-block: var(--space-800);
     }
 
-    background-image: url("/images/desktop/image-hero.jpg");
+    &__title {
+      --box-padding-block-start: #{functions.rem(42)};
+      --box-padding-block-end: #{functions.rem(42)};
+
+      max-inline-size: 14ch;
+    }
   }
 }
 
