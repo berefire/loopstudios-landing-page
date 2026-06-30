@@ -7,11 +7,11 @@
 
     // Primitive CSS variables
     @include mixins.css-vars(primitives.$spaces);
-    @include mixins.css-vars(primitives.$colors);
+    @include mixins.css-vars(primitives.$primitive-colors);
 
     // Semantic CSS variables
     @include mixins.css-vars(semantics.$spacing);
-    @include mixins.css-vars(semantics.$colors);
+    @include mixins.css-vars(semantics.$semantic-colors);
     @include mixins.css-vars(semantics.$typography);
 
     // Responsive typography CSS variables
