@@ -129,9 +129,17 @@
 
     @include mixins.text-style(semantics.$text-button);
     text-transform: uppercase;
+    color: var(--color-fc-text-button);
+
+    @include mixins.focus-ring;
 
     @include mixins.mq(lg) {
       margin-block-start: 0;
+    }
+
+    &:hover {
+      background-color: var(--color-bg-button-hover);
+      color: var(--color-fc-text-button-hover);
     }
   }
 }
