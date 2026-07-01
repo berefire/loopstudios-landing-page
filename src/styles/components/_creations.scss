@@ -55,7 +55,20 @@
 
   &__item {
     position: relative;
+    overflow: hidden;
     z-index: 0;
+  }
+
+  &__item::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: hsl( 0 0% 100% / 0%);
+    transition: background-color 200ms ease;
+
+    z-index: 1;
   }
 
   &__image {
@@ -93,7 +106,7 @@
     text-transform: uppercase;
 
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 
     inline-size: 9ch;
     inset-block-end: functions.rem(20);
@@ -114,8 +127,16 @@
     }
   }
 
+  &__item:is(:hover, :focus-within)::before {
+    background: hsl(0 0% 100% / 75%);
+  }
+
   &__item--compact-title &__name {
     inline-size: 4ch;
+  }
+
+  &__item:is(:hover, :focus-within) &__name {
+    color: var(--color-fc-title-card-hover);
   }
 
   &__button {
