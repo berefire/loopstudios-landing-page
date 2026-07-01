@@ -42,6 +42,14 @@ $text-body: (
     "weight": var(--font-weight-regular),
 ); 
 
+$text-mobile-nav: (
+    "family": var(--font-heading),
+    "size": primitives.$font-size-300,
+    "line-height": primitives.$line-height-none,
+    "letter-spacing": primitives.$letter-spacing-none,
+    "weight": var(--font-weight-light),
+);
+
 $text-button: (
     "family": var(--font-body),
     "size": primitives.$font-size-200,

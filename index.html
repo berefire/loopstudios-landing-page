@@ -48,7 +48,7 @@
         <a href="#" class="site-logo">
           <img src="/icons/logo.svg" alt="Loopstudios logo" class="site-logo__image" width="192" height="32">
         </a>
-        <nav aria-label="Desktop navigation" class="site-nav">
+        <nav aria-label="Desktop navigation" class="site-nav site-nav--desktop">
           <ul class="site-nav__list" role="list">
             <li class="site-nav__item"><a href="#" class="site-nav__link">About</a></li>
             <li class="site-nav__item"><a href="#" class="site-nav__link">Careers</a></li>
@@ -223,11 +223,12 @@
   </footer>
 
   <dialog class="site-dialog" id="mobile-menu" aria-labelledby="mobile-menu-title">
+    <div class="site-dialog__content box stack">
     <header class="site-dialog__header">
       <a href="#" class="site-logo" aria-label="Loopstudios logo">
         <img src="/icons/logo.svg" alt="Loopstudios logo" class="site-logo__image" width="192" height="32">
       </a>
-      <button type="button" class="menu-button menu-button--close" aria-expanded="true" aria-controls="mobile-menu"
+      <button type="button" class="menu-button--close" aria-expanded="true" aria-controls="mobile-menu"
         aria-label="Close mobile menu">
         <svg aria-hidden="true" focusable="false" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20">
@@ -237,7 +238,7 @@
         </svg>
       </button>
     </header>
-    <nav aria-label="Mobile navigation" class="site-nav">
+    <nav aria-label="Mobile navigation" class="site-nav site-nav--mobile">
       <h2 id="mobile-menu-title" class="sr-only">Mobile menu</h2>
       <ul class="site-nav__list" role="list">
         <li class="site-nav__item"><a href="#" class="site-nav__link">About</a></li>
@@ -247,6 +248,7 @@
         <li class="site-nav__item"><a href="#" class="site-nav__link">Support</a></li>
       </ul>
     </nav>
+    </div>
   </dialog>
 </body>
 

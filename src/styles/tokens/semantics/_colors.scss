@@ -9,7 +9,7 @@ $semantic-colors: (
     "color-bg-button-hover": primitives.$black,
     "color-fc-text-button-hover": primitives.$white,
     "color-hero-title": primitives.$white,
-    "color-nav-list": primitives.$white,
+    "color-fc-nav-list": primitives.$white,
     "color-link-site-nav": primitives.$white,
     "color-bg-main": primitives.$white,
     "color-fc-title-section": primitives.$black,
@@ -20,4 +20,6 @@ $semantic-colors: (
     "color-bg-footer": primitives.$black,
     "color-fc-footer-text": primitives.$white,
     "color-fc-footer-copyright": primitives.$gray-600,
+    "color-bg-site-dialog": primitives.$black,
+    "color-bg-button-close": primitives.$white,
 );
