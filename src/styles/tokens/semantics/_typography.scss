@@ -49,3 +49,11 @@ $text-button: (
     "letter-spacing": primitives.$letter-spacing-wide,
     "weight": var(--font-weight-regular),
 );
+
+$text-body-footer: (
+    "family": var(--font-body),
+    "size": primitives.$font-size-100,
+    "line-height": primitives.$line-height-relaxed,
+    "letter-spacing": primitives.$letter-spacing-none,
+    "weight": var(--font-weight-regular),
+); 
