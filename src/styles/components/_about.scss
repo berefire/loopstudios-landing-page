@@ -25,7 +25,7 @@
   }
 
   &__title {
-    color: var(--color-fc-about-title);
+    color: var(--color-fc-title-section);
     text-transform: uppercase;
 
     @include mixins.text-style(semantics.$text-section-heading);
