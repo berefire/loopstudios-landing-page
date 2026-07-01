@@ -17,7 +17,7 @@
 ![Mobile First](https://img.shields.io/badge/Mobile--First-Design-orange?style=for-the-badge)
 [![Google Lighthouse](https://img.shields.io/badge/Lighthouse-Audit-00B0FF?style=for-the-badge&logo=lighthouse&logoColor=white)](./assets/downloads/lighthouse-performance-report.pdf)
 
-This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -50,11 +50,28 @@ Users should be able to:
 
 ### 📸Screenshot
 
+#### Mobile (375x914)
+
+| _Main_ | _Menu_ | _Menu Active_ |
+| ------ | ------ | ------------- |
+| ![Mobile](./screenshots/mobile.png) | ![Mobile Menu](./screenshots/mobile-menu.png) | ![Mobile Menu Active](./screenshots/mobile-menu-active.png) |  
+
+#### Tablet (768x914)
+
+| _Main_ | _Menu_ | _Menu Active_ |
+| ------ | ------ | ------------- |
+| ![Tablet](./screenshots/tablet.png) | ![Tablet Menu](./screenshots/tablet-menu.png) | ![Tablet Menu Active](./screenshots/tablet-menu-active.png) |  
+
+#### Desktop (1440x914)
+
+| _Main_ | _Active_ |
+| ------ | -------- |
+| ![Desktop](./screenshots/desktop.png) | ![Desktop Active](./screenshots/desktop-active.png) |
 
 ### 🔗Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://berefire.github.io/loopstudios-landing-page/](https://berefire.github.io/loopstudios-landing-page/)
 
 ---
 
