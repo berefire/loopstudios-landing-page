@@ -1,0 +1,137 @@
+@use "@styles/abstracts/mixins" as mixins;
+@use "@styles/abstracts/functions" as functions;
+@use "@styles/tokens/semantics" as semantics;
+
+.creations {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+
+  @include mixins.mq(lg) {
+    grid-template-columns: 1fr auto;
+    row-gap: var(--space-1000);
+    grid-template-areas:
+      "title button"
+      "list-creations list-creations";
+
+    &__title {
+      grid-area: title;
+    }
+
+    &__button {
+      grid-area: button;
+    }
+  }
+
+  &__title {
+    @include mixins.text-style(semantics.$text-section-heading);
+
+    color: var(--color-fc-title-section);
+    text-transform: uppercase;
+    text-align: center;
+
+    @include mixins.mq(lg) {
+      text-align: start;
+    }
+  }
+
+  &__list {
+    margin-block-start: var(--space-600);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-300);
+
+    @include mixins.mq(md) {
+      margin-block-start: var(--space-400);
+    }
+
+    @include mixins.mq(lg) {
+      grid-area: list-creations;
+      gap: var(--space-400);
+      margin-block-start: 0;
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &__item {
+    position: relative;
+    z-index: 0;
+  }
+
+  &__image {
+    inline-size: 100%;
+    block-size: auto;
+    object-fit: contain;
+
+    @include mixins.mq(md) {
+      block-size: functions.rem(120);
+      object-fit: cover;
+      object-position: center 10%;
+    }
+
+    @include mixins.mq(lg) {
+      block-size: functions.rem(450);
+    }
+  }
+
+  &__item--offset-image-70 &__image {
+    @include mixins.mq(md) {
+      object-position: center 70%;
+    }
+  }
+
+  &__item--offset-image-95 &__image {
+    @include mixins.mq(md) {
+      object-position: center 95%;
+    }
+  }
+
+  &__name {
+    @include mixins.text-style(semantics.$text-card-heading);
+
+    color: var(--color-fc-title-card);
+    text-transform: uppercase;
+
+    position: absolute;
+    z-index: 1;
+
+    inline-size: 9ch;
+    inset-block-end: functions.rem(20);
+    inset-inline-start: functions.rem(20);
+
+    @include mixins.mq(md) {
+      inset-inline-start: functions.rem(37);
+    }
+
+    @include mixins.mq(lg) {
+      inset-block-end: functions.rem(10);
+      inset-inline-start: functions.rem(15);
+    }
+
+    @include mixins.mq(xl) {
+      inset-block-end: functions.rem(32);
+      inset-inline-start: functions.rem(40);
+    }
+  }
+
+  &__item--compact-title &__name {
+    inline-size: 4ch;
+  }
+
+  &__button {
+    --box-padding-inline: #{functions.rem(40.5)};
+    --box-padding-block: #{functions.rem(13)};
+    --box-border: #{functions.rem(2)} solid var(--color-border-button);
+
+    margin-block-start: var(--space-400);
+    margin-inline: auto;
+    inline-size: max-content;
+
+    @include mixins.text-style(semantics.$text-button);
+    text-transform: uppercase;
+
+    @include mixins.mq(lg) {
+      margin-block-start: 0;
+    }
+  }
+}
