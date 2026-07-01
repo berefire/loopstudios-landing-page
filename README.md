@@ -1,5 +1,22 @@
 # Frontend Mentor - Loopstudios landing page solution
 
+![GitHub last commit](https://img.shields.io/github/last-commit/berefire/loopstudios-landing-page)
+![Repo size](https://img.shields.io/github/repo-size/berefire/loopstudios-landing-page)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+![Architecture - BEM](https://img.shields.io/badge/Architecture-BEM-000000?style=for-the-badge)
+![CUBE CSS](https://img.shields.io/badge/CUBE%20CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+[![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3e54a3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/)
+![Build Tool - Vite](https://img.shields.io/badge/Build%20Tool-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Semantic HTML](https://img.shields.io/badge/Semantic%20HTML-ff9800?style=for-the-badge)
+![Accessibility](https://img.shields.io/badge/Accessibility-A11Y-0052cc?style=for-the-badge)
+![Responsive Layout](https://img.shields.io/badge/Responsive%20Layout-Full%20Support-blue?style=for-the-badge)
+![Mobile First](https://img.shields.io/badge/Mobile--First-Design-orange?style=for-the-badge)
+[![Google Lighthouse](https://img.shields.io/badge/Lighthouse-Audit-00B0FF?style=for-the-badge&logo=lighthouse&logoColor=white)](./assets/downloads/lighthouse-performance-report.pdf)
+
 This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
@@ -8,115 +25,213 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
+- [My process](#️my-process)
   - [Built with](#built-with)
+  - [Project architecture](#project-architecture)
+  - [Accessibility](#accessibility)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
   - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+---
 
-## Overview
+## 📖Overview
 
 ### The challenge
 
 Users should be able to:
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
+- View the optimal layout depending on their device's screen size.
+- See hover and focus states for all interactive elements.
+- Open and close an accessible mobile navigation menu.
+- Navigate the website using only the keyboard.
 
-### Screenshot
+### 📸Screenshot
 
-![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
-### Links
+### 🔗Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## My process
+---
 
-### Built with
+## ⚙️My process
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
+### 🛠Built with
+
+- Semantic HTML5
+- Sass (SCSS)
+- CUBE CSS architecture
+- BEM methodology
+- Design Tokens (Primitive & Semantic)
+- CSS Custom Properties
 - CSS Grid
+- Flexbox
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Vanilla JavaScript (ES Modules)
+- HTML `<dialog>` element
+- Vite
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+---
 
-### What I learned
+## 🔎Project architecture
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+The project follows a scalable architecture inspired by **CUBE CSS** while using **BEM** for component naming.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+src/
+│
+├── assets/
+├── js/
+├── styles/
+│   ├── abstracts/
+│   ├── base/
+│   ├── compositions/
+│   ├── components/
+│   ├── tokens/
+│   │   ├── primitives/
+│   │   └── semantics/
+│   └── utilities/
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+
+The styling system is based on:
+
+- Primitive design tokens
+- Semantic design tokens
+- Reusable Sass mixins and functions
+- CSS custom properties generated from Sass maps
+
+This approach keeps the design system consistent while making components easy to maintain.
+
+---
+
+## ♿Accessibility
+
+Accessibility was considered throughout the project.
+
+Implemented features include:
+
+- Semantic HTML landmarks
+- Accessible navigation
+- Keyboard navigation
+- Visible focus states
+- ARIA attributes
+- Accessible mobile menu using the native `<dialog>` element
+- Focus management when opening and closing the mobile menu
+- Scroll locking while the dialog is open
+- Screen reader friendly labels
+
+---
+
+### 💡What I learned
+
+This project helped me improve several areas of front-end development.
+
+#### Building a design system with Sass
+
+Instead of hardcoding values, I created primitive and semantic design tokens.
+
+```scss
+$colors: (
+  "color-bg-footer": primitives.$black,
+  "color-fc-footer-text": primitives.$white,
+);
+```
+
+This made the project much easier to maintain.
+
+#### Creating reusable mixins
+
+For example, media queries are handled using a reusable mixin.
+
+```scss
+@mixin mq($breakpoint) {
+    $size: map.get(primitives.$breakpoints, $breakpoint);
+
+    @media (min-width: $size) {
+        @content;
+    }
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+
+#### Managing typography through semantic tokens
+
+Instead of applying font values directly, typography styles are stored in semantic maps.
+
+```scss
+@include mixins.text-style(semantics.$text-hero);
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+This allows typography to evolve independently from components.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+#### Building accessible UI interactions
 
-### Continued development
+The mobile navigation uses the native HTML `<dialog>` element together with JavaScript for:
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- opening and closing animations
+- focus management
+- scroll locking
+- keyboard accessibility
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+---
 
-### Useful resources
+### 🚀Continued development
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+In future projects I'd like to continue improving:
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- CSS architecture for larger applications
+- Advanced JavaScript patterns
+- Component-driven development
+- Automated accessibility testing
+- Performance optimization
+- Unit and integration testing
 
-### AI Collaboration
+---
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
+### 📚Useful resources
 
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
+- [https://frontendmentor.io](https://frontendmentor.io) - Great platform for practicing realistic frontend projects.
+- [https://cube.fyi](https://cube.fyi) - Excellent resource for learning and applying CUBE CSS.
+- [https://developer.mozilla.org](https://developer.mozilla.org) - My primary reference for HTML, CSS, JavaScript, and accessibility.
+- [https://www.w3.org/WAI/](https://www.w3.org/WAI/) - Helpful accessibility guidance and best practices.
 
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+---
 
-## Author
+### 🤖AI Collaboration
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+AI was used as a development assistant throughout this project.
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+#### Tools
 
-## Acknowledgments
+- ChatGPT
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+#### How AI was used
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Reviewing HTML semantics
+- Discussing CSS architecture
+- Designing Sass token structure
+- Improving accessibility
+- Debugging JavaScript
+- Reviewing responsive layouts
+- Refining Git commit messages
+- Explaining CSS Grid and Flexbox layouts
+
+#### What worked well
+
+AI was especially useful for discussing architectural decisions rather than simply generating code. It helped evaluate different implementation approaches while allowing me to make the final design decisions myself.
+
+---
+
+## 👤Author
+
+- Frontend Mentor - [@berefire](https://www.frontendmentor.io/profile/berefire)
+- GitHub - [@berefire](https://github.com/berefire)
+
+## 🙏Acknowledgments
+
+Thanks to Frontend Mentor for providing practical challenges that help developers improve real-world frontend skills.
+
+---
