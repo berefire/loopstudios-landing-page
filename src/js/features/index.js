@@ -1,0 +1,1 @@
+export { initializeMenu } from "./mobile-menu";
