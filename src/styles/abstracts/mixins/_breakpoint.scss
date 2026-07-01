@@ -12,3 +12,15 @@
         @content;
     }
 }
+
+@mixin mq-down($breakpoint) {
+    $size: map.get(primitives.$breakpoints, $breakpoint);
+
+    @if $size == null {
+        @error "Breakpoint '#{$breakpoint}' does not exist.";
+    }
+
+    @media (max-width: $size){
+        @content;
+    }
+}

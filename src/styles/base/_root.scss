@@ -1,5 +1,5 @@
 @use "@styles/abstracts/mixins" as mixins;
-
+@use "@styles/abstracts/functions" as functions;
 @use "@styles/tokens/semantics" as semantics;
 @use "@styles/tokens/primitives" as primitives;
 
@@ -20,6 +20,9 @@
     --text-card-heading-size: #{primitives.$font-size-300};
 
     // Responsive space CSS variables
+    @include mixins.mq-down(sm){
+        --text-hero-size: #{primitives.$font-size-400};
+    }
 
     @include mixins.mq(md) {
         --text-hero-size: #{primitives.$font-size-900};
