@@ -4,14 +4,14 @@
 ![Repo size](https://img.shields.io/github/repo-size/berefire/loopstudios-landing-page)
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Semantic HTML](https://img.shields.io/badge/Semantic%20HTML-ff9800?style=for-the-badge)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+[![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3e54a3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/)
 ![Architecture - BEM](https://img.shields.io/badge/Architecture-BEM-000000?style=for-the-badge)
 ![CUBE CSS](https://img.shields.io/badge/CUBE%20CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-[![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3e54a3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/)
 ![Build Tool - Vite](https://img.shields.io/badge/Build%20Tool-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Semantic HTML](https://img.shields.io/badge/Semantic%20HTML-ff9800?style=for-the-badge)
 ![Accessibility](https://img.shields.io/badge/Accessibility-A11Y-0052cc?style=for-the-badge)
 ![Responsive Layout](https://img.shields.io/badge/Responsive%20Layout-Full%20Support-blue?style=for-the-badge)
 ![Mobile First](https://img.shields.io/badge/Mobile--First-Design-orange?style=for-the-badge)
@@ -54,19 +54,19 @@ Users should be able to:
 
 | _Main_ | _Menu_ | _Menu Active_ |
 | ------ | ------ | ------------- |
-| ![Mobile](./screenshots/mobile.png) | ![Mobile Menu](./screenshots/mobile-menu.png) | ![Mobile Menu Active](./screenshots/mobile-menu-active.png) |  
+| ![Mobile](./docs/screenshots/mobile.png) | ![Mobile Menu](./docs/screenshots/mobile-menu.png) | ![Mobile Menu Active](./docs/screenshots/mobile-menu-active.png) |  
 
 #### Tablet (768x914)
 
 | _Main_ | _Menu_ | _Menu Active_ |
 | ------ | ------ | ------------- |
-| ![Tablet](./screenshots/tablet.png) | ![Tablet Menu](./screenshots/tablet-menu.png) | ![Tablet Menu Active](./screenshots/tablet-menu-active.png) |  
+| ![Tablet](./docs/screenshots/tablet.png) | ![Tablet Menu](./docs/screenshots/tablet-menu.png) | ![Tablet Menu Active](./docs/screenshots/tablet-menu-active.png) |  
 
 #### Desktop (1440x914)
 
 | _Main_ | _Active_ |
 | ------ | -------- |
-| ![Desktop](./screenshots/desktop.png) | ![Desktop Active](./screenshots/desktop-active.png) |
+| ![Desktop](./docs/screenshots/desktop.png) | ![Desktop Active](./docs/screenshots/desktop-active.png) |
 
 ### 🔗Links
 
