@@ -20,7 +20,9 @@
         @error "Breakpoint '#{$breakpoint}' does not exist.";
     }
 
-    @media (max-width: $size){
+    $max-size: calc(#{$size} - 0.01px);
+
+    @media (max-width: $max-size){
         @content;
     }
 }
