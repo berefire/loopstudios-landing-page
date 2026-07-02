@@ -84,6 +84,11 @@
     color: var(--color-link-site-logo);
 
     @include mixins.focus-ring(var(--color-link-site-logo));
+
+    &-image {
+      inline-size: #{functions.rem(144)};
+      block-size: var(--space-300);
+    }
   }
 
   &__link {
