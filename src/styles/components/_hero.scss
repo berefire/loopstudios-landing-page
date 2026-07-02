@@ -4,11 +4,23 @@
 
 .hero {
   min-block-size: functions.rem(650);
+  position: relative;
+  isolation: isolate;
 
-  background-image: url("/images/mobile/image-hero.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  &::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image:
+      linear-gradient(hsl(0 0% 0% / 0.45), hsl(0 0% 0% / 0.45)),
+      url("/images/mobile/image-hero.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   &__content {
     --stack-space: #{functions.rem(163)};
@@ -45,16 +57,18 @@
   }
 
   @include mixins.mq(lg) {
-    background-image: url("/images/desktop/image-hero.jpg");
+    background-image:
+      linear-gradient(hsl(0 0% 0% / 0.45), hsl(0 0% 0% / 0.45)),
+      url("/images/desktop/image-hero.jpg");
 
     &__content {
+      --stack-space: #{functions.rem(127)};
       --box-padding-inline: #{functions.rem(165)};
       --box-padding-block: var(--space-800);
     }
 
     &__title {
-      --box-padding-block-start: #{functions.rem(42)};
-      --box-padding-block-end: #{functions.rem(42)};
+      --box-padding-block: #{functions.rem(42)};
 
       max-inline-size: 14ch;
     }
@@ -65,6 +79,16 @@
   color: var(--color-link-site-logo);
 
   @include mixins.focus-ring;
+
+  &__image {
+    inline-size: #{functions.rem(144)};
+    block-size: var(--space-300);
+
+    @include mixins.mq(md) {
+      inline-size: #{functions.rem(192)};
+      block-size: var(--space-400);
+    }
+  }
 }
 
 .menu-button {
