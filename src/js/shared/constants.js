@@ -1,5 +1,5 @@
 export const BREAKPOINTS = {
-    desktop: "(min-width: 64em)"
+    desktop: "64em"
 };
 
 export const REQUIRED_ELEMENTS = [

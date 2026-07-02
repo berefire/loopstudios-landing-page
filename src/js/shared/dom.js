@@ -63,7 +63,7 @@ function initDOMElements(){
         const isRequired = REQUIRED_ELEMENTS.includes(key);
 
         if( isRequired && !isValidElement(element)) {
-            throw new Error(`[DOM] Missing required element: ${key}`);
+            throw new Error(`Required DOM element "${key}" (${SELECTORS[key]}) was not found`);
         }
     });
 

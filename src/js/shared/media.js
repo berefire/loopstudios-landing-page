@@ -1,6 +1,6 @@
 import { BREAKPOINTS } from './constants.js';
 
-const desktopMediaQuery = window.matchMedia(BREAKPOINTS.desktop);
+const desktopMediaQuery = window.matchMedia(`(min-width: ${BREAKPOINTS.desktop})`);
 
 export function isDesktop() {
     return desktopMediaQuery.matches;
