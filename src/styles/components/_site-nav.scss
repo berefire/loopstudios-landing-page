@@ -18,7 +18,7 @@
   /* ==========================
      Mobile
   ========================== */
-
+  
   &--mobile {
     display: block;
     color: var(--color-fc-nav-list);
@@ -126,6 +126,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    & .site-logo {
+      &__image {
+        inline-size: #{functions.rem(144)};
+        block-size: var(--space-300);
+
+        @include mixins.mq(md) {
+          inline-size: #{functions.rem(192)};
+          block-size: var(--space-400);
+        }
+      }
+    }
   }
 
   &[open].animate &__content {
